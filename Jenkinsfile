@@ -34,7 +34,7 @@ pipeline {
                     bat '''
                     docker stop hello-world-java || true
                     docker rm hello-world-java || true
-                    docker run -d --name hello-world-java -p 8080:8080 hello-world-java:v1
+                    docker run -d --name hello-world-java -p 9090:9090 hello-world-java:v1
                     '''
                 }
             }
